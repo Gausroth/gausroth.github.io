@@ -2,8 +2,6 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css" type="text/css">
-        <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <style>
       .map {
         height: 400px;
@@ -14,29 +12,14 @@
     <title>OpenLayers example</title>
   </head>
   <body>
-    <div id="header">
-        <h1>Welcome to my site!</h1>
-        <div class="slidecontainer">
-                <label Hidden for="myRange">Dark Mode</label>
-                <input type="range" min="1" max="2" value="1" class="slider" id="myRange" onclick="DarkMode()">
-        </div>
+    <div id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
     </div>
-    <div id="container">
-        <div id="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="bio.html">Bio</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="hitTracker.html">Hit Tracker</a></li>
-            </ul>
-        </div>
-        <div id="content">
-    <h2>My Map</h2>
-    <div id="map" class="map"></div>
-        </div>
-    </div>
-    <div id="footer">
-        <p>footer</p>
+    <div id="content">
+      <h2>My Map</h2>
+        <div id="map" class="map"></div>
     </div>
     <script type="text/javascript">
       var map = new ol.Map({
