@@ -16,6 +16,8 @@ body {
 a {
     color: rgb(0, 0, 0);
     text-decoration: none;
+    height: 48px;
+    width: 48px;
 }
 
 #header {
