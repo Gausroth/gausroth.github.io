@@ -64,6 +64,7 @@ li {
     opacity: 1;
 }
 
-#mapid {
-    height: 180px;
+.map {
+    height: 50%;
+    width: 75%;
 }
