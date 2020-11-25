@@ -12,8 +12,30 @@
     <title>OpenLayers example</title>
   </head>
   <body>
+    <div id="header">
+        <h1>Welcome to my site!</h1>
+        <div class="slidecontainer">
+                <label Hidden for="myRange">Dark Mode</label>
+                <input type="range" min="1" max="2" value="1" class="slider" id="myRange" onclick="DarkMode()">
+        </div>
+    </div>
+    <div id="container">
+        <div id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="hitTracker.html">Hit Tracker</a></li>
+            </ul>
+        </div>
+        <div id="content">
     <h2>My Map</h2>
     <div id="map" class="map"></div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>footer</p>
+    </div>
     <script type="text/javascript">
       var map = new ol.Map({
         target: 'map',
