@@ -64,7 +64,7 @@ li {
     opacity: 1;
 }
 
-.map {
+#map {
     height: 50%;
     width: 75%;
 }
