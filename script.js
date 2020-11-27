@@ -3,7 +3,8 @@ function DarkMode() {
     element.classList.toggle("dark-mode");
 }
 
-function requestUserRepos(username) {
+window.onload = function requestUserRepos() {
+    var username = 'gausroth';
     // Create new XMLHttpRequest object
     const xhr = new XMLHttpRequest();
     // GitHub endpoint, dynamically passing in specified username
@@ -43,4 +44,5 @@ function requestUserRepos(username) {
     }
     // Send the request to the server
     xhr.send();
+    DarkMode().call;
 }
