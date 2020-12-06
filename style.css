@@ -63,20 +63,10 @@ li {
     padding: 5px;
 }
 
-.slidecontainer {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-}
-
-.slider {
-    -webkit-appearance: none;
-    width: 50px;
-    height: 25px;
-    background: rgb(56,56,56);
-    outline: none;
-}
-
-.slider:hover {
-    opacity: 1;
+#darkModeBtn {
+    border: 1px solid silver;
+    border-radius: 50%;
+    background-color: rgb(56,56,56);
+    width: 35px;
+    height: 35px;
 }
