@@ -3,4 +3,4 @@ function DarkMode() {
     element.classList.toggle("dark-mode");
 }
 
-window.onload = function DarkMode;
+window.onload = DarkMode();
