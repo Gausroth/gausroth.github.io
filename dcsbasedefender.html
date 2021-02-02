@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | NewTowerDefensePrototype</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+        var unityInstance = UnityLoader.instantiate("unityContainer", "Build/DCS Base Defender v1.5.json", { onProgress: UnityProgress });
+    </script>
+</head>
+<body>
+    <div id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="unitytutorials.html">Unity Tutorials</a></li>
+            <li><a href="medimall.html">Medi Mall</a></li>
+            <li><a href="dcsbasedefender.html">DCS Base Defender</a></li>
+        </ul>
+        <ul>
+            <li><a href="https://github.com/Gausroth"><img src="GitHub_Logo.png" alt="GitHub Logo" width="32" height="32" /></a></li>
+            <li><a href="https://www.linkedin.com/in/timothy-jeske-8254a690/"><img src="Linkedin_Logo.png" alt="Linkedin Logo" width="32" height="32" /></a></li>
+            <li><a href="https://twitter.com/GausRoth"><img src="Twitter_Logo.png" alt="Twitter Logo" width="32" height="32" /></a></li>
+            <li><a href="https://www.youtube.com/channel/UCiNYeBMVHu-BLBFu78WbYaw"><img src="YouTube_Logo.png" alt="Youtube Logo" width="32" height="32" /></a></li>
+            <li><a href="https://www.twitch.tv/gausroth"><img src="Twitch_Logo.png" alt="Twitch Logo" width="32" height="32" /></a></li>
+            <li><a href="https://learn.unity.com/u/timothy-jeske"><img src="Unity_Logo.png" alt="Unity Logo" width="32" height="32" /></a></li>
+        </ul>
+    </div>
+    <div>
+        <div class="webgl-content">
+            <div id="unityContainer" style="width: 960px; height: 600px"></div>
+            <div class="footer">
+                <div class="webgl-logo"></div>
+                <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+                <div class="title">NewTowerDefensePrototype</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
