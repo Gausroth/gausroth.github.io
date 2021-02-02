@@ -48,4 +48,4 @@ function DarkMode() {
 //    // Send the request to the server
 //    xhr.send();
     DarkMode().call;
-}
+//}
