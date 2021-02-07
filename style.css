@@ -1,16 +1,30 @@
-body {
-    text-align: center;
-    width: 75%;
-    margin: auto;
-    padding: 25px;
-    background-color: white;
-    color: black;
-    font-size: 25px;
-}
-
+/*Dark Mode*/
 .dark-mode {
     background-color: rgb(56,56,56);
     color: silver;
+}
+/*Dark Mode*/
+.slidecontainer {
+    position: absolute;
+    top: 12px;
+    right: 225px;
+}
+/*Dark Mode*/
+#darkModeBtn {
+    border: 1px solid silver;
+    border-radius: 50%;
+    background-color: rgb(56,56,56);
+    width: 35px;
+    height: 35px;
+}
+
+body {
+    margin-left: 220px;
+    margin-right: 220px;
+    text-align: center;
+    height: 100%;
+    color: black;
+    font-size: 25px;
 }
 
 a {
@@ -18,61 +32,34 @@ a {
     color: black;
 }
 
-ul {
-    list-style-type: none;
-}
-
-li {
-    display: inline;
-    padding: 5px;
-}
-
-#header {
-    position: relative;
-    border: 1px solid silver;
-    border-radius: 12px;
-}
-
-#content {
-    border: 1px solid silver;
-    border-radius: 12px;
-}
-
-#github {
-    border: 1px solid silver;
-    border-radius: 12px;
-}
-
-#footer {
-    border: 1px solid silver;
-    border-radius: 12px;
-}
-
-#navbar {
-    position: relative;
-    border: 1px solid silver;
-    border-radius: 12px;
-}
-
-#userRepo {
-    text-align: left;
-    border: 1px solid silver;
-    border-radius: 12px;
-    width: 50%;
-    margin: 0 auto;
-    padding: 5px;
-}
-
-#darkModeBtncontainer {
-    position: absolute;
+#LeftSideBarContainer {
+    width: 200px;
+    position: fixed;
     top: 10px;
-    right: 10px;
+    left: 10px;
+    bottom: 10px;
+}
+#RightSideBarContainer {
+    width: 50px;
+    position: fixed;
+    top: 10px;
+    right: 160px;
+    bottom: 10px;
+}
+#LeftSideBar {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
-#darkModeBtn {
-    border: 1px solid silver;
-    border-radius: 50%;
-    background-color: rgb(56,56,56);
-    width: 35px;
-    height: 35px;
+#RightSideBar {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
