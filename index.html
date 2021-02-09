@@ -10,7 +10,13 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <div id="LeftSideBarContainer" class="content">
+    <div id="header">
+        <h1>Welcome to my site!</h1>
+        <div class="slidecontainer">
+            <input id="darkModeBtn" type="button" value="DM" onclick="DarkMode()" />
+        </div>
+    </div>
+    <div id="LeftSideBarContainer">
         <div id="LeftSideBar">
             <br /><br />
             <a href="#home">Home</a><br /><br />
@@ -21,7 +27,7 @@
             <script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
         </div>
     </div>
-    <div id="RightSideBarContainer" class="content">
+    <div id="RightSideBarContainer">
         <div id="RightSideBar">
             <br /><br />
             <a href="https://gamejolt.com/@gausroth"><img src="GameJolt_Logo.png" alt="GameJolt Logo" width="32" height="32" /></a><br /><br />
@@ -36,14 +42,8 @@
             <a href="https://youtube.com/channel/UCiNYeBMVHu-BLBFu78WbYaw"><img src="YouTube_Logo.png" alt="Youtube Logo" width="32" height="32" /></a><br /><br />
         </div>
     </div>
-    <div id="header" class="content">
-        <h1>Welcome to my site!</h1>
-        <div class="slidecontainer">
-            <input id="darkModeBtn" type="button" value="DM" onclick="DarkMode()" />
-        </div>
-    </div>
     <div id="container">
-        <div id="home" class="content">
+        <div id="home">
             <br />
             <img src="ProfilePic.jpg" alt="My Head Shot" width="150" height="150" />
             <h2>Bio</h2>
@@ -51,15 +51,18 @@
             <p>I am a 31 year old Unity programmer. I am married and a father of three, two daughters and one son. I am a Wisconsinite but am currently living in Minnesota. I was born in Green Bay, WI but grew up mostly in Milwaukee, WI.</p>
             <p>I graduated High School in 2008 from Wisconsin Career Academy and College in 2020 from American Military University. I studied Information Technology with a concentration on Web Development.</p>
             <p>After high school I joined the United States Air Force and spent about 5 years over seas in Asia. Two years in South Korea and three years in Japan. My remaining time in was spent in Illinois at Scott AFB near St. Louis.</p>
+            <br /><br />
+            <a id="top" href="#header">Top</a><br /><br />
         </div>
-        <div id="tutorials" class="content">
+        <div id="tutorials">
             <h2>Unity Tutorials</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/8w5Tj-jU_Lw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <br /><br />
             <iframe width="560" height="315" src="https://www.youtube.com/embed/xvfM4WBAg9A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <br /><br />
+            <a id="top" href="#header">Top</a><br /><br />
         </div>
-        <div id="medimall" class="content">
+        <div id="medimall">
             <h2>Medi Mall</h2>
             <p>Medi Mall is a 2D mall managment game. It takes place in a medieval setting and features dungeon crawl aspects.</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Ihm9PAgSZ0w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -68,13 +71,16 @@
             <br /><br />
             <iframe frameborder="0" src="https://itch.io/embed/908343?linkback=true&amp;border_width=0&amp;bg_color=222&amp;fg_color=dadada" width="550" height="165"><a href="https://gausroth.itch.io/medi-mall">Medi Mall by GausRoth</a></iframe>
             <br /><br />
+            <a id="top" href="#header">Top</a><br /><br />
         </div>
-        <div id="basedefender" class="content">
+        <div id="basedefender">
             <h2>Base Defender</h2>
             <p>Base Defender is a top down base defense game.</p>
+            <br /><br />
+            <a id="top" href="#header">Top</a><br /><br />
         </div>
     </div>
-    <div id="footer" class="content">
+    <div id="footer">
         <p><a href="https://damnedcatstudio.github.io/">Damned Cat Studio</a></p>
     </div>
 </body>
