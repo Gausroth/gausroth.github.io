@@ -24,6 +24,7 @@ body {
     color: black;
     font-size: 25px;
 }
+
 #flexcontainer {
     display: flex;
     flex-wrap: wrap;
@@ -31,8 +32,8 @@ body {
 
 #main {
     flex: 70%;
-    width: 100%;
 }
+
 a {
     text-decoration: none;
     color: black;
@@ -51,10 +52,10 @@ a {
 }
 
 #top {
-display:none;
+    display: none;
 }
 
-@media (max-width: 600px)  {
+@media (max-width: 600px) {
     #LeftSideBarContainer, #RightSideBarContainer {
         flex-direction: column;
         position: unset;
@@ -62,7 +63,7 @@ display:none;
         right: auto;
     }
 
-    .video{
+    .video, #main {
         width: 100%;
     }
 
