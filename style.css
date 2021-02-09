@@ -76,23 +76,23 @@ a {
     width: 1px;
 }
 
-@media only screen and (max-width: 640px)  {
-    #LeftSideBarContainer {
+@media screen and (max-width: 600px)  {
+#LeftSideBarContainer {
 
-    }
+}
 
-    #RightSideBarContainer {
+#RightSideBarContainer {
 
-    }
+}
 
-    #LeftSideBar {
+#LeftSideBar {
 
-    }
+}
 
-    #RightSideBar {
+#RightSideBar {
 
-    }
-    #top {
-    }
+}
+#top {
 
+}
 }
