@@ -78,21 +78,21 @@ a {
 
 @media screen and (max-width: 600px)  {
 #LeftSideBarContainer {
-
+width: 100%;
 }
 
 #RightSideBarContainer {
-
+width: 100%;
 }
 
 #LeftSideBar {
-
+width: 100%;
 }
 
 #RightSideBar {
-
+width: 100%;
 }
 #top {
-
+width: 100%;
 }
 }
