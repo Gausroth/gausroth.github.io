@@ -19,80 +19,52 @@
 }
 
 body {
-    margin-left: 220px;
-    margin-right: 220px;
     text-align: center;
     height: 100%;
     color: black;
     font-size: 25px;
 }
+#flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+#main {
+    flex: 70%;
+    width: 100%;
+}
 a {
     text-decoration: none;
     color: black;
 }
 
 #LeftSideBarContainer {
-    width: 200px;
+    flex: 20%;
     position: fixed;
-    top: 10px;
     left: 10px;
-    bottom: 10px;
 }
 
 #RightSideBarContainer {
-    width: 50px;
+    flex: 10%;
     position: fixed;
-    top: 10px;
-    right: 160px;
-    bottom: 10px;
+    right: 10px;
 }
 
-#LeftSideBar {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-#RightSideBar {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
 #top {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+display:none;
 }
 
-@media screen and (max-width: 600px)  {
-#LeftSideBarContainer {
-width: 100%;
-}
+@media (max-width: 600px)  {
+    #LeftSideBarContainer, #RightSideBarContainer {
+        flex-direction: column;
+        position: inherit;
+    }
 
-#RightSideBarContainer {
-width: 100%;
-}
+    .video{
+        width: 100%;
+    }
 
-#LeftSideBar {
-width: 100%;
-}
-
-#RightSideBar {
-width: 100%;
-}
-#top {
-width: 100%;
-}
+    #top {
+        display: inherit;
+    }
 }
