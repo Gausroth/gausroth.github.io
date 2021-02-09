@@ -32,8 +32,10 @@ body {
 
 #main {
     flex: 70%;
+    margin-left: 200px;
+    margin-right: 50px;
 }
-
+    
 a {
     text-decoration: none;
     color: black;
@@ -63,7 +65,12 @@ a {
         right: auto;
     }
 
-    .video, #main {
+    #main {
+        width: 100%;
+        margin-left:unset;
+        margin-right:unset;
+    }
+    .video {
         width: 100%;
     }
 
