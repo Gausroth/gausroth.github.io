@@ -39,6 +39,7 @@ a {
     left: 10px;
     bottom: 10px;
 }
+
 #RightSideBarContainer {
     width: 50px;
     position: fixed;
@@ -46,6 +47,7 @@ a {
     right: 160px;
     bottom: 10px;
 }
+
 #LeftSideBar {
     margin: 0;
     position: absolute;
@@ -62,4 +64,35 @@ a {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+#top {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+@media only screen and (max-width: 640px)  {
+    #LeftSideBarContainer {
+
+    }
+
+    #RightSideBarContainer {
+
+    }
+
+    #LeftSideBar {
+
+    }
+
+    #RightSideBar {
+
+    }
+    #top {
+    }
+
 }
