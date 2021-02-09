@@ -57,7 +57,9 @@ display:none;
 @media (max-width: 600px)  {
     #LeftSideBarContainer, #RightSideBarContainer {
         flex-direction: column;
-        position: inherit;
+        position: unset;
+        left: auto;
+        right: auto;
     }
 
     .video{
