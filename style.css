@@ -18,6 +18,26 @@
     height: 35px;
 }
 
+#TopBarContainer a {
+    /*border-radius: 10px 10px;*/
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+}
+        /* Change the color of links on hover */
+    #TopBarContainer a:hover {
+        color: silver;
+    }
+
+        /* Add a color to the active/current link */
+        #TopBarContainer a.active {
+            color: silver;
+        }
+
+#LeftSideBarContainer a:hover {
+    color: silver;
+}
+
 body {
     text-align: center;
     height: 100%;
@@ -35,7 +55,7 @@ body {
     margin-left: 200px;
     margin-right: 50px;
 }
-    
+
 a {
     text-decoration: none;
     color: black;
@@ -67,9 +87,10 @@ a {
 
     #main {
         width: 100%;
-        margin-left:unset;
-        margin-right:unset;
+        margin-left: unset;
+        margin-right: unset;
     }
+
     .video {
         width: 100%;
     }
