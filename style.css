@@ -19,20 +19,18 @@
 }
 
 #TopBarContainer a {
-    /*border-radius: 10px 10px;*/
     text-align: center;
     padding: 5px 16px;
     text-decoration: none;
 }
-        /* Change the color of links on hover */
-    #TopBarContainer a:hover {
-        color: silver;
-    }
 
-        /* Add a color to the active/current link */
-        #TopBarContainer a.active {
-            color: silver;
-        }
+#TopBarContainer a:hover {
+    color: silver;
+}
+
+#TopBarContainer a.active {
+    color: silver;
+}
 
 #LeftSideBarContainer a:hover {
     color: silver;
