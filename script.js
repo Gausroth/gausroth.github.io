@@ -7,7 +7,6 @@ function DarkMode() {
     isDarkMode = !isDarkMode;
 
     if (isDarkMode) {
-        console.log(isDarkMode);
         document.body.style.backgroundColor = "rgb(56,56,56)";
         document.body.style.color = "#C0C0C0";
         darkModeBtn.style.backgroundColor = "#C0C0C0";
@@ -21,7 +20,6 @@ function DarkMode() {
         }
     }
     else {
-        console.log(isDarkMode);
         document.body.style.backgroundColor = "#C0C0C0";
         document.body.style.color = "rgb(56,56,56)";
         darkModeBtn.style.backgroundColor = "rgb(56,56,56)";
