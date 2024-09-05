@@ -4,11 +4,33 @@
     right: 225px;
 }
 
+#gameTable {
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    #gameTable td {
+        padding: 10px;
+        width: 33%
+    }
+
+
+    #gameTable th {
+        padding: 10px;
+        width: 33%
+    }
+
 #darkModeBtn {
+    position: absolute;
+    top: 65px;
     border: 1px solid silver;
     border-radius: 50%;
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
+    margin-left: 25px;
 }
 
 #btn {
@@ -20,21 +42,27 @@
 }
 
 #btnInline {
-    padding: 5px;
+    padding: 5px 16px;
     border: 1px solid silver;
     background-color: silver;
     border-radius: 12px;
 }
 
+#iconLink {
+    margin: 10px;
+    border: 1px solid silver;
+    border-radius: 25%;
+}
+
 #TopBarContainer a {
     text-align: center;
-    padding: 5px 16px;
+    padding: 15px;
     text-decoration: none;
 }
 
-#LeftSideBarContainer a:hover {
+/*#LeftSideBarContainer a:hover {
     color: silver;
-}
+}*/
 
 body {
     text-align: center;
@@ -55,9 +83,10 @@ body {
 
 a {
     text-decoration: none;
+    color: crimson;
 }
 
-#LeftSideBarContainer {
+/*#LeftSideBarContainer {
     flex: 20%;
     position: fixed;
     left: 10px;
@@ -67,15 +96,15 @@ a {
     flex: 10%;
     position: fixed;
     right: 10px;
-}
+}*/
 
 @media (max-width: 600px) {
-    #LeftSideBarContainer, #RightSideBarContainer {
+/*    #LeftSideBarContainer, #RightSideBarContainer {
         flex-direction: column;
         position: unset;
         left: auto;
         right: auto;
-    }
+    }*/
 
     #main {
         width: 100%;
@@ -90,4 +119,41 @@ a {
     #top {
         display: inherit;
     }
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    padding: 12px 20px;
+    border: 1px solid silver;
+    background-color: silver;
+    border-radius: 12px;
+}
+
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+/* Add a background color and some padding around the form */
+.container {
+    width: 50%; /* Full width */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+#subject, #fname, #lname {
+    background-color: silver;
 }
