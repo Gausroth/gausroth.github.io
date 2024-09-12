@@ -4,6 +4,41 @@
     right: 225px;
 }
 
+#navBar {
+    width: 100%;
+}
+
+.body-grid-container {
+    text-align: left;
+    display: inline-grid;
+    grid-template-columns: 500px 500px;
+}
+
+.top-bar-grid-container {
+    display: inline-grid;
+    grid-template-columns: 75px 75px 75px 75px;
+}
+
+.mid-bar-grid-container {
+    display: inline-grid;
+    grid-template-columns: 150px 150px 150px;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: 250px 250px 250px;
+}
+
+.grid-item {
+    font-size: 30px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+    .grid-item:hover {
+        transform: scale(1.1);
+    }
+
 #gameTable {
     border-collapse: collapse;
     text-align: center;
@@ -11,43 +46,24 @@
     margin-right: auto;
 }
 
-    #gameTable td {
-        padding: 10px;
-    }
+#gameTable td {
+    padding: 10px;
+}
 
 
-    #gameTable th {
-        padding: 10px;
-    }
+#gameTable th {
+    padding: 10px;
+}
 
 #darkModeBtn {
-    position: absolute;
-    top: 65px;
     border: 1px solid silver;
     border-radius: 50%;
     width: 32px;
     height: 32px;
-    margin-left: 25px;
-}
-
-#btn {
-    display: block;
-    padding: 5px;
-    border: 1px solid silver;
-    background-color: silver;
-    border-radius: 12px;
-}
-
-#btnInline {
-    padding: 5px 16px;
-    border: 1px solid silver;
-    background-color: silver;
-    border-radius: 12px;
 }
 
 #iconLink {
     margin: 10px;
-    border: 1px solid silver;
     border-radius: 25%;
 }
 
@@ -55,11 +71,24 @@
     text-align: center;
     padding: 15px;
     text-decoration: none;
+    width: 100px;
 }
 
-/*#LeftSideBarContainer a:hover {
-    color: silver;
-}*/
+.TopBarIcon {
+    transition: transform 0.2s;
+}
+
+    .TopBarIcon:hover {
+        transform: scale(1.5);
+    }
+
+.MidBarIcon {
+    transition: transform 0.2s;
+}
+
+    .MidBarIcon:hover {
+        transform: scale(1.1);
+    }
 
 body {
     text-align: center;
@@ -78,31 +107,7 @@ body {
     margin-right: 50px;
 }
 
-a {
-    text-decoration: none;
-    color: crimson;
-}
-
-/*#LeftSideBarContainer {
-    flex: 20%;
-    position: fixed;
-    left: 10px;
-}
-
-#RightSideBarContainer {
-    flex: 10%;
-    position: fixed;
-    right: 10px;
-}*/
-
 @media (max-width: 600px) {
-/*    #LeftSideBarContainer, #RightSideBarContainer {
-        flex-direction: column;
-        position: unset;
-        left: auto;
-        right: auto;
-    }*/
-
     #main {
         width: 100%;
         margin-left: unset;
@@ -116,41 +121,4 @@ a {
     #top {
         display: inherit;
     }
-}
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    padding: 12px 20px;
-    border: 1px solid silver;
-    background-color: silver;
-    border-radius: 12px;
-}
-
-    /* When moving the mouse over the submit button, add a darker green color */
-    input[type=submit]:hover {
-        background-color: #45a049;
-    }
-
-/* Add a background color and some padding around the form */
-.container {
-    width: 50%; /* Full width */
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-}
-
-#subject, #fname, #lname {
-    background-color: silver;
 }

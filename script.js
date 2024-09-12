@@ -12,8 +12,8 @@ function DarkMode() {
         darkModeBtn.style.backgroundColor = "#C0C0C0";
         darkModeBtn.style.color = "rgb(56,56,56)";
         for (var i = 0; i < buttons.length; i++) {
-            buttons[i].style.backgroundColor = "#C0C0C0";
-            buttons[i].style.color = "rgb(56,56,56)";
+            //buttons[i].style.backgroundColor = "#C0C0C0";
+            buttons[i].style.color = "#C0C0C0";
         }
         for (var i = 0; i < top.length; i++) {
             top[i].style.color = "#C0C0C0";
@@ -25,8 +25,8 @@ function DarkMode() {
         darkModeBtn.style.backgroundColor = "rgb(56,56,56)";
         darkModeBtn.style.color = "#C0C0C0";
         for (var i = 0; i < buttons.length; i++) {
-            buttons[i].style.backgroundColor = "rgb(56,56,56)";
-            buttons[i].style.color = "#C0C0C0";
+            //buttons[i].style.backgroundColor = "rgb(56,56,56)";
+            buttons[i].style.color = "rgb(56,56,56)";
         }
         for (var i = 0; i < top.length; i++) {
             top[i].style.color = "rgb(56,56,56)";
