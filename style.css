@@ -11,7 +11,11 @@
 .body-grid-container {
     text-align: left;
     display: inline-grid;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 450px 450px;
+}
+
+.body-grid-container a {
+text-decoration: none;
 }
 
 .top-bar-grid-container {
@@ -35,15 +39,27 @@
     transition: transform 0.2s;
 }
 
-    .grid-item:hover {
-        transform: scale(1.1);
-    }
+.body-grid-item {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.grid-item:hover {
+    transform: scale(1.1);
+}
 
 #gameTable {
     border-collapse: collapse;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+.research-summary {
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    text-align: left;
 }
 
 #gameTable td {
@@ -90,6 +106,14 @@
         transform: scale(1.1);
     }
 
+.grid-link {
+    transition: transform 0.2s;
+}
+
+    .grid-link:hover {
+        transform: translateX(5px);
+    }
+
 body {
     text-align: center;
     height: 100%;
@@ -103,8 +127,8 @@ body {
 
 #main {
     flex: 70%;
-    margin-left: 200px;
-    margin-right: 50px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 @media (max-width: 600px) {
@@ -120,5 +144,25 @@ body {
 
     #top {
         display: inherit;
+    }
+    .body-grid-container {
+        text-align: left;
+        display: inline-grid;
+        grid-template-columns: 400px;
+    }
+
+    .top-bar-grid-container {
+        display: inline-grid;
+        grid-template-columns: 75px;
+    }
+
+    .mid-bar-grid-container {
+        display: inline-grid;
+        grid-template-columns: 150px;
+    }
+
+    .grid-container {
+        display: inline-grid;
+        grid-template-columns: 250px;
     }
 }

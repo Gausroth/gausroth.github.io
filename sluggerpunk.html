@@ -16,64 +16,39 @@
     <br />
     <div id="flexcontainer">
         <div id="main">
-            <div id="TopBarContainer">
-                <a href="https://github.com/Gausroth"><img src="Images/GitHub_Logo.png" alt="GitHub Logo" width="32" height="32" /></a>
-                <a href="https://gausroth.itch.io/"><img src="Images/Itch_Logo.png" alt="Itchb Logo" width="32" height="32" /></a>
-                <a href="https://linkedin.com/in/timothy-jeske-8254a690/"><img src="Images/Linkedin_Logo.png" alt="Linkedin Logo" width="32" height="32" /></a>
-                <input id="darkModeBtn" type="button" value="DM" onclick="DarkMode()" />
+            <div id="TopBarContainer" class="top-bar-grid-container">
+                <div class="TopBarIcon"><a href="https://github.com/Gausroth"><img src="Images/GitHub_Logo.png" alt="GitHub Logo" width="32" height="32" /></a></div>
+                <div class="TopBarIcon"><a href="https://gausroth.itch.io/"><img src="Images/Itch_Logo.png" alt="Itchb Logo" width="32" height="32" /></a></div>
+                <div class="TopBarIcon"><a href="https://linkedin.com/in/timothy-jeske-8254a690/"><img src="Images/Linkedin_Logo.png" alt="Linkedin Logo" width="32" height="32" /></a></div>
+                <div class="TopBarIcon"><input id="darkModeBtn" type="button" value="DM" onclick="DarkMode()" /></div>
             </div>
             <br />
             <br />
-            <div id="home">
-                <img src="Images/BrandLogo.png" alt="Logo" width="150" height="150" />
+            <p><img src="Images/BrandLogo.png" alt="Logo" width="150" height="150" /></p>
+            <div id="TopBarContainer" class="mid-bar-grid-container">
+                <div class="MidBarIcon"><a id="btnInline" name="btn" href="index.html">Bio</a></div>
+                <div class="MidBarIcon"><a id="btnInline" name="btn" href="games.html">Portfolio</a></div>
+                <div class="MidBarIcon"><a id="btnInline" name="btn" href="mailto:tjeske@damnedcat.studio">Contact Me</a></div>
             </div>
-            <br />
-            <br />
-            <div id="TopBarContainer">
-                <a id="btnInline" name="btn" href="index.html">Home</a>
-                <a id="btnInline" name="btn" href="games.html">Games</a>
-                <!--<a id="btnInline" name="btn" href="horizonWorlds.html">Horizon Worlds</a>-->
-                <a id="btnInline" name="btn" href="contactMe.html">Contact Me</a>
+            <h2>Sluggerpunk</h2>
+            <p><img src="Images/SluggerpunkLogoIntroOnTV.png" alt="Sluggerpunk" /></p>
+            <p>Sluggerpunk is a gripping 2D survivors roguelike adventure. As you navigate through a myriad of challenges, hone your skills and strategies to clash with formidable foes lurking in the underground. Build a versatile arsenal of abilities and gear to enhance your chances to survive, but will you?</p>
+            <div class="body-grid-container">
+                <div class="body-grid-item">
+                    <h2>Roles &amp; Responsibilities</h2>
+                    <p></p>
+                </div>
+                <div class="body-grid-item">
+                    <h2>Tools Used</h2>
+                    <div class="grid-link"><p><a name="btn" href="https://godotengine.org/">Godot</a></p></div>
+                    <div class="grid-link"><p><a name="btn" href="https://www.getpaint.net/">paint.net</a></p></div>
+                </div>
             </div>
-            <br />
-            <br />
-            <div id="sluggerpunk">
-                <img src="Images/slugger_punk.jpg" alt="Sluggerpunk">
-                <br />
-                <br />
-                <table id="gameTable">
-                    <tr>
-                        <th>Sluggerpunk</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            Sluggerpunk is a gripping 2D survivors roguelike adventure. As you navigate through a myriad of challenges, hone your skills and strategies to clash with formidable foes lurking in the underground. Build a versatile arsenal of abilities and gear to enhance your chances to survive, but will you?
-                            <br />
-                            <br />
-                        </td>
-                    </tr>
-                </table>
-                <table id="gameTable">
-                    <tr>
-                        <th>Platform</th>
-                        <th>Engine</th>
-                        <th>Role</th>
-                    </tr>
-                    <tr>
-                        <td>Steam</td>
-                        <td>Godot</td>
-                        <td>Programmer</td>
-                    </tr>
-                </table>
-                <br />
-                <br />
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/HjOCLSnJrQM?si=f7TMQDDDNAOtCjS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <br />
-                <br />
-                <iframe src="https://store.steampowered.com/widget/2729940/" frameborder="0" width="646" height="190"></iframe>
-            </div>
+            <h2>Research Summary</h2>
+            <p>One of my biggest accomplishments in the Sluggerpunk project was 100% customizable key bindings for keyboard and controller. Game accessibility can be improved through visual, auditorial and haptic feedback and the physical device the player uses for input. Ensuring that the games controls were 100% customizable with both keyboard and controller allows for a larger freedom of play and allows for players that would normally not be able to play with the default controls to play.</p>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/HjOCLSnJrQM?si=f7TMQDDDNAOtCjS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>        
+            <p><iframe src="https://store.steampowered.com/widget/2729940/" frameborder="0" width="646" height="190"></iframe></p>   
         </div>
-
     </div>
 </body>
 </html>
