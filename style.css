@@ -8,6 +8,9 @@
     width: 100%;
 }
 
+li {
+    height: 50px;
+}
 .body-grid-container {
     text-align: left;
     display: inline-grid;
@@ -95,7 +98,7 @@ text-decoration: none;
 }
 
     .TopBarIcon:hover {
-        transform: scale(1.5);
+        transform: scale(1.1);
     }
 
 .MidBarIcon {
