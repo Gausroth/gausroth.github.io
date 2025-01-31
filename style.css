@@ -38,7 +38,6 @@ text-decoration: none;
 
 .grid-item {
     font-size: 30px;
-    text-align: center;
     transition: transform 0.2s;
 }
 
@@ -62,7 +61,6 @@ text-decoration: none;
     margin-left: auto;
     margin-right: auto;
     width: 900px;
-    text-align: left;
 }
 
 #gameTable td {
