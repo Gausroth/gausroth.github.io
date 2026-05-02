@@ -1,73 +1,86 @@
 <!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Description" content="Sluggerpunk">
-    <title>Sluggerpunk</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Sluggerpunk — Timothy Jeske"/>
+  <title>Sluggerpunk · Timothy Jeske</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <div id="header">
+<nav class="nav">
+  <a href="index.html" class="nav-brand">
+    <img src="Images/BrandLogo.png" alt="GausRoth Logo"/>
+    <span>GAUS</span>ROTH
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Bio</a>
+    <a href="games.html">Portfolio</a>
+    <a href="mailto:tjeske@damnedcat.studio">Contact</a>
+    <a href="Downloads/TimothyJeske2026Resume.pdf" download>Resume ↓</a>
+  </div>
+  <div class="nav-social">
+    <a href="https://github.com/Gausroth" target="_blank" rel="noopener" aria-label="GitHub">
+      <img src="Images/GitHub_Logo.png" alt="GitHub"/>
+    </a>
+    <a href="https://gausroth.itch.io/" target="_blank" rel="noopener" aria-label="itch.io">
+      <img src="Images/Itch_Logo.png" alt="itch.io"/>
+    </a>
+    <a href="https://linkedin.com/in/timothy-jeske-8254a690/" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <img src="Images/Linkedin_Logo.png" alt="LinkedIn"/>
+    </a>
+  </div>
+</nav>
+<main class="page">
+  <a href="games.html" class="back-link">← Back to Portfolio</a>
+
+  <div class="game-hero">
+    <h1 class="game-hero-title fade-up">Sluggerpunk</h1>
+    <p class="game-hero-desc fade-up delay-1">A gripping 2D survivors roguelike. Navigate challenges, hone strategies, and clash with formidable foes in the underground.</p>
+  <div class="game-hero-image">      <img src="Images/SluggerpunkLogoIntroOnTV.png" alt="Sluggerpunk Logo" style="margin-bottom:1rem"/>
+      <img src="Images/SluggerpunkControls.png" alt="Controls Interface" style="margin-bottom:1rem"/></div>
+  </div>
+
+  <div class="game-meta">
+    <div class="meta-block">
+      <div class="meta-label">Roles &amp; Responsibilities</div>
+      <ul class="meta-list">
+      <li>Level Hazard Design</li>
+      <li>UI Design &amp; Development</li>
+      <li>HUD Revisions</li>
+      <li>Controls Interface</li>
+      <li>Controls Accessibility</li>
+      <li>Leaderboard Interface</li>
+      <li>Quality Assurance</li>
+      <li>Discord Webhook Integration</li>
+      </ul>
     </div>
-    <br />
-    <br />
-    <div id="flexcontainer">
-        <div id="main">
-            <div id="TopBarContainer" class="top-bar-grid-container">
-                <div class="TopBarIcon"><a href="https://github.com/Gausroth"><img src="Images/GitHub_Logo.png" alt="GitHub Logo" width="32" height="32" /></a></div>
-                <div class="TopBarIcon"><a href="https://gausroth.itch.io/"><img src="Images/Itch_Logo.png" alt="Itch.io Logo" width="32" height="32" /></a></div>
-                <div class="TopBarIcon"><a href="https://linkedin.com/in/timothy-jeske-8254a690/"><img src="Images/Linkedin_Logo.png" alt="LinkedIn Logo" width="32" height="32" /></a></div>
-                <div class="TopBarIcon"><input id="darkModeBtn" type="button" value="DM" onclick="DarkMode()" /></div>
-            </div>
-            <br />
-            <br />
-            <p><img src="Images/BrandLogo.png" alt="Logo" width="150" height="150" /></p>
-            <div id="TopBarContainer" class="mid-bar-grid-container">
-                <div class="MidBarIcon"><a id="btnInline" name="btn" href="index.html">Bio</a></div>
-                <div class="MidBarIcon"><a id="btnInline" name="btn" href="games.html">Portfolio</a></div>
-                <div class="MidBarIcon"><a id="btnInline" name="btn" href="mailto:tjeske@damnedcat.studio">Contact Me</a></div>
-            </div>
-            <h2>Sluggerpunk</h2>
-            <p><img src="Images/SluggerpunkLogoIntroOnTV.png" alt="Sluggerpunk Logo" /></p>
-            <p><img src="Images/SluggerpunkControls.png" alt="Sluggerpunk Controls" /></p>
-            <p>Sluggerpunk is a gripping 2D survivors roguelike adventure. As you navigate through a myriad of challenges, hone your skills and strategies to clash with formidable foes lurking in the underground. Build a versatile arsenal of abilities and gear to enhance your chances to survive, but will you?</p>
-            <div class="body-grid-container">
-                <div class="body-grid-item">
-                    <h2>Roles &amp; Responsibilities</h2>
-                    <ul>
-                        <li>Level Hazard Design</li>
-                        <li>UI Design &amp; Development</li>
-                        <li>HUD Revisions</li>
-                        <li>Controls Interface</li>
-                        <li>Controls Accessibility</li>
-                        <li>Leaderboard Interface</li>
-                        <li>Quality Assurance</li>
-                        <li>Discord Webhook Integration</li>
-                    </ul>
-                </div>
-                <div></div>
-                <div class="body-grid-item">
-                    <h2>Tools Used</h2>
-                    <ul>
-                        <li><div class="grid-link"><a name="btn" href="https://godotengine.org/">Godot</a></div></li>
-                        <li><div class="grid-link"><a name="btn" href="https://www.getpaint.net/">paint.net</a></div></li>
-                        <li><div class="grid-link"><a name="btn" href="https://guttykreum.itch.io/japanese-batting-center-game-assets">japanese-batting-center-game-assets</a></div></li>
-                        <li><div class="grid-link"><a name="btn" href="https://guttykreum.itch.io/train-station-game-assets">train-station-game-assets</a></div></li>
-                        <li><div class="grid-link"><a name="btn" href="https://guttykreum.itch.io/gothic-castle-game-assets">gothic-castle-game-assets</a></div></li>
-                        <li><div class="grid-link"><a name="btn" href="https://kenney-assets.itch.io/input-prompts-pixel-16">Input Prompts Pixel 16×</a></div></li>
-                    </ul>
-                </div>
-            </div>
-            <h2>Research Summary</h2>
-            <p style="text-align: left">One of my biggest accomplishments in the Sluggerpunk project was 100% customizable key bindings for keyboard and controller. Game accessibility can be improved through visual, auditorial and haptic feedback and the physical device the player uses for input. Control customization is one of the most used and sought after accessibility options used today. Ensuring that the games controls were 100% customizable with both keyboard and controller allows for a larger freedom of play and allows for players that would normally not be able to play with the default controls to play.</p>
-            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/HjOCLSnJrQM?si=f7TMQDDDNAOtCjS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
-            <p><iframe src="https://store.steampowered.com/widget/2729940/" frameborder="0" width="646" height="190"></iframe></p>
-            <br />
-            <br />
-        </div>
+    <div class="meta-block">
+      <div class="meta-label">Tools Used</div>
+      <ul class="meta-list">
+      <li><a href="https://godotengine.org/" target="_blank">Godot</a></li>
+      <li><a href="https://www.getpaint.net/" target="_blank">paint.net</a></li>
+      <li><a href="https://guttykreum.itch.io/japanese-batting-center-game-assets" target="_blank">Japanese Batting Center Assets</a></li>
+      <li><a href="https://guttykreum.itch.io/train-station-game-assets" target="_blank">Train Station Assets</a></li>
+      <li><a href="https://guttykreum.itch.io/gothic-castle-game-assets" target="_blank">Gothic Castle Assets</a></li>
+      <li><a href="https://kenney-assets.itch.io/input-prompts-pixel-16" target="_blank">Input Prompts Pixel 16×</a></li>
+      </ul>
     </div>
+  </div>
+
+  <div class="research-block">
+    <div class="meta-label">Research Summary</div>
+    <p>One of my biggest accomplishments in Sluggerpunk was implementing 100% customizable key bindings for both keyboard and controller. Control customization is one of the most sought-after accessibility options in gaming today — ensuring full customization for both input methods enables players who couldn't use the defaults to engage with the game on their own terms.</p>
+  </div>
+
+  <div class="media-grid"><div class="yt-wrap"><iframe src="https://www.youtube.com/embed/HjOCLSnJrQM?si=f7TMQDDDNAOtCjS0" title="Sluggerpunk gameplay" allowfullscreen></iframe></div>
+    <iframe src="https://store.steampowered.com/widget/2729940/" frameborder="0" width="646" height="190"></iframe></div>
+
+</main>
+<footer class="footer">
+  <span>© 2025 Timothy Jeske · Damned Cat Studio</span>
+  <span><a href="mailto:tjeske@damnedcat.studio">tjeske@damnedcat.studio</a></span>
+</footer>
 </body>
 </html>

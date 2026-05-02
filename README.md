@@ -1,1 +1,0 @@
-# gausroth.github.io

@@ -1,62 +1,77 @@
 <!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Description" content="Derelict">
-    <title>Derelict</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Derelict — Timothy Jeske"/>
+  <title>Derelict · Timothy Jeske</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <div id="header">
-    </div>
-    <br />
-    <br />
-    <div id="flexcontainer">
-        <div id="main">
-            <div id="TopBarContainer" class="top-bar-grid-container">
-                <div class="TopBarIcon"><a href="https://github.com/Gausroth"><img src="Images/GitHub_Logo.png" alt="GitHub Logo" width="32" height="32" /></a></div>
-                <div class="TopBarIcon"><a href="https://gausroth.itch.io/"><img src="Images/Itch_Logo.png" alt="Itch.io Logo" width="32" height="32" /></a></div>
-                <div class="TopBarIcon"><a href="https://linkedin.com/in/timothy-jeske-8254a690/"><img src="Images/Linkedin_Logo.png" alt="LinkedIn Logo" width="32" height="32" /></a></div>
-                <div class="TopBarIcon"><input id="darkModeBtn" type="button" value="DM" onclick="DarkMode()" /></div>
-            </div>
-            <br />
-            <br />
-            <p><img src="Images/BrandLogo.png" alt="Logo" width="150" height="150" /></p>
-            <div id="TopBarContainer" class="mid-bar-grid-container">
-                <div class="MidBarIcon"><a id="btnInline" name="btn" href="index.html">Bio</a></div>
-                <div class="MidBarIcon"><a id="btnInline" name="btn" href="games.html">Portfolio</a></div>
-                <div class="MidBarIcon"><a id="btnInline" name="btn" href="mailto:tjeske@damnedcat.studio">Contact Me</a></div>
-            </div>
-            <h2>Derelict</h2>
-            <p><img src="Images/Derelict.jpg" alt="Derelict Logo" /></p>
-            <p>Explore the Horizon, find out what happend to her crew and save her from total destruction.</p>
-            <div class="body-grid-container">
-                <div class="body-grid-item">
-                    <h2>Roles &amp; Responsibilities</h2>
-                    <ul>
-                        <li>Sole Developer</li>
-                    </ul>
-                </div>
-                <div></div>
-                <div class="body-grid-item">
-                    <h2>Tools Used</h2>
-                    <ul>
-                        <li><div class="grid-link"><a name="btn" href="https://www.meta.com/quest/products/quest-2/?PID=100357191&cjevent=16ee5270171311f083db00140a82b820&utm_source=cj&utm_medium=affiliate&utm_campaign=creatoraffiliate&utm_parent=frl">Meta Quest 2</a></div></li>
-                        <li><div class="grid-link"><a name="btn" href="https://developers.meta.com/horizon-worlds/learn/documentation/vr-creation/scripting/use-code-blocks/">CodeBlocks</a></div></li>
-                    </ul>
-                </div>
-            </div>
-            <br />
-            <a href="https://horizon.meta.com/world/6053122874718874/?locale=en_US" target="_blank">
-                <button style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">Play Here</button>
-            </a>
-            <br />
-            <br />
-        </div>
+<nav class="nav">
+  <a href="index.html" class="nav-brand">
+    <img src="Images/BrandLogo.png" alt="GausRoth Logo"/>
+    <span>GAUS</span>ROTH
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Bio</a>
+    <a href="games.html">Portfolio</a>
+    <a href="mailto:tjeske@damnedcat.studio">Contact</a>
+    <a href="Downloads/TimothyJeske2026Resume.pdf" download>Resume ↓</a>
+  </div>
+  <div class="nav-social">
+    <a href="https://github.com/Gausroth" target="_blank" rel="noopener" aria-label="GitHub">
+      <img src="Images/GitHub_Logo.png" alt="GitHub"/>
+    </a>
+    <a href="https://gausroth.itch.io/" target="_blank" rel="noopener" aria-label="itch.io">
+      <img src="Images/Itch_Logo.png" alt="itch.io"/>
+    </a>
+    <a href="https://linkedin.com/in/timothy-jeske-8254a690/" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <img src="Images/Linkedin_Logo.png" alt="LinkedIn"/>
+    </a>
+  </div>
+</nav>
+<main class="page">
+  <a href="games.html" class="back-link">← Back to Portfolio</a>
 
+  <div class="game-hero">
+    <h1 class="game-hero-title fade-up">Derelict</h1>
+    <p class="game-hero-desc fade-up delay-1">Explore the Horizon, find out what happened to her crew, and save the ship from total destruction.</p>
+  <div class="game-hero-image">      <img src="Images/Derelict.jpg" alt="Derelict" style="margin-bottom:1rem"/></div>
+  </div>
+
+  <div class="game-meta">
+    <div class="meta-block">
+      <div class="meta-label">Roles &amp; Responsibilities</div>
+      <ul class="meta-list">
+      <li><a href="https://developers.meta.com/horizon-worlds/learn/documentation/welcome-creators" target="_blank">Creator</a></li>
+      </ul>
     </div>
+    <div class="meta-block">
+      <div class="meta-label">Tools Used</div>
+        <ul class="meta-list">
+          <li><a href="https://www.meta.com/quest/products/quest-2/" target="_blank">Meta Quest 2</a></li>
+          <li><a
+              href="https://developers.meta.com/horizon-worlds/learn/documentation/vr-creation/getting-started/create-a-new-world-in-horizon"
+              target="_blank">VR Editor</a></li>
+          <li><a
+              href="https://developers.meta.com/horizon-worlds/learn/documentation/vr-creation/scripting/use-code-blocks/"
+              target="_blank">CodeBlocks</a></li>
+        </ul>
+    </div>
+  </div>
+
+
+  <div style="margin-bottom:2rem">
+    <a href="https://horizon.meta.com/world/6053122874718874/?locale=en_US" target="_blank" rel="noopener" class="btn btn-primary">Play in Horizon Worlds ↗</a>
+  </div>
+
+
+</main>
+<footer class="footer">
+  <span>© 2025 Timothy Jeske · Damned Cat Studio</span>
+  <span><a href="mailto:tjeske@damnedcat.studio">tjeske@damnedcat.studio</a></span>
+</footer>
 </body>
 </html>
